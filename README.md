@@ -1,5 +1,7 @@
 # qr-code-generate
-
+```
+Projeto de estudo em Front-end com Vue e Quasar
+```
 ## Project setup
 ```
 npm install
