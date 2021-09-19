@@ -15,7 +15,15 @@
       </q-card-section>
 
       <q-card-section v-if="input != ''">
-        <vue-qrcode :value="input"></vue-qrcode>
+        <vue-qrcode :value="input" :options="{
+          color: {
+            dark: '#1f6ece',
+            light: '#212121',
+          },
+          scale: 2,
+          width: 200,
+          margin: 0,
+        }"></vue-qrcode>
       </q-card-section>
     
       <q-btn outline :disable="input != '' ? false : true" class="button-generate" color="primary" label="Download" />
@@ -30,7 +38,7 @@ export default {
   name: 'home',
   data() {
     return {
-      input: 'Teste'
+      input: ''
     }
   },
   components: {
